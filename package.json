@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build",
 		"build": "tailwindcss build -i src/main.css -o public/styles.css --watch"
 	},
 	"author": "",
